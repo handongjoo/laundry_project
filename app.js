@@ -24,10 +24,6 @@ app.use('/api', [
   reviewRouter,
 ]);
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/assets/main.html');
-});
-
 app.listen(3000, () => {
   console.log('서버가 요청을 받을 준비가 됐어요');
 });
